@@ -1,29 +1,31 @@
-Algoritmos y ProgramaciÃ³n 2 - FI UBA
+Algoritmos y Programación 2 - FI UBA
 
 # TDA: Ascensor
 
 ## Enunciado
 
-DiseÃ±ar la especificaciÃ³n e implementar el TDA `Ascensor`. 
+Diseñar la especificación e implementar el TDA `Ascensor`. 
 
 ![Ascensor][ascensor]
 
-Un Ascensor se debe crear recibiendo como parÃ¡metro la cantidad de pisos por los que se 
-mueve (sin considerar la planta baja). 
+El `Ascensor` debe proveer operaciones para:
 
-Debe proveer operaciones para:
+1. Inicializarlo recibiendo como parámetro la cantidad de pisos por los que se 
+mueve (sin considerar la planta baja).
 
-1. Devolver el nÃºmero de piso en el que se encuentra, considerando 0 como la planta baja.
+2. Devolver el número de piso en el que se encuentra, considerando 0 como la planta baja.
 
-2. Llamar desde un piso: debe moverlo y devolver la cantidad de pisos que el ascensor se moviÃ³ 
+3. Llamar desde un piso: debe moverlo y devolver la cantidad de pisos que el ascensor se movió 
 para llegar al piso indicado. 
 
-3. Devolver la cantidad total de pisos que el ascensor subiÃ³ y bajÃ³.
+4. Devolver la cantidad total de pisos que el ascensor subió y bajó.
 
-4. Devolver la cantidad de veces que fue a un piso.
+5. Devolver la cantidad de veces que fue a un piso.
 
-## SoluciÃ³n
+## Solución
 
 ### Implementaciones incrementales
+
+
 
 [ascensor]: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Feature_elevators.svg/200px-Feature_elevators.svg.png "Ascensor"
