@@ -36,6 +36,11 @@ para llegar al piso indicado.
     * implementación: [`Ascensor.cpp`](../punto-02/src/Ascensor.cpp)
     * uso: [`main.cpp`](../punto-02/src/main.cpp)
 
+3. Método `unsigned int llamarDesdePiso(unsigned int piso)`:
+    * declaración: [`Ascensor.h`](../punto-03/src/Ascensor.h)
+    * implementación: [`Ascensor.cpp`](../punto-03/src/Ascensor.cpp)
+    * uso: [`main.cpp`](../punto-03/src/main.cpp)
+
 
 
 
