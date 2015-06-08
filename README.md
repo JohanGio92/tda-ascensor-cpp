@@ -26,10 +26,17 @@ para llegar al piso indicado.
 
 ### Implementaciones incrementales
 
-1. Constructor de `Ascensor` y primeros atributos identificados.
+1. Constructor de `Ascensor` y primeros atributos identificados:
     * declaración: [`Ascensor.h`](../punto-01/src/Ascensor.h)
     * implementación: [`Ascensor.cpp`](../punto-01/src/Ascensor.cpp)
     * uso: [`main.cpp`](../punto-01/src/main.cpp)
+
+2. Método `unsigned int obtenerPisoActual()`:
+    * declaración: [`Ascensor.h`](../punto-02/src/Ascensor.h)
+    * implementación: [`Ascensor.cpp`](../punto-02/src/Ascensor.cpp)
+    * uso: [`main.cpp`](../punto-02/src/main.cpp)
+
+
 
 
 [ascensor]: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Feature_elevators.svg/200px-Feature_elevators.svg.png "Ascensor"
