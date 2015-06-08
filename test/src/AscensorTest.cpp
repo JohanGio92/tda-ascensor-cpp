@@ -15,3 +15,10 @@ TEST(AscensorTest, crearConPisosInvalidosLanzaExcepcion) {
 
     ASSERT_ANY_THROW(Ascensor ascensor(0));
 }
+
+TEST(AscensorTest, estaEnPlantaBajaLuegoDeCrear) {
+
+    Ascensor ascensor(6);
+
+    ASSERT_EQ(0, ascensor.obtenerPisoActual());
+}
