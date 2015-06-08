@@ -12,9 +12,15 @@ Ascensor::Ascensor(unsigned int pisos) {
     }
 
     this->cantidadDePisos = pisos;
+    this->piso = 0;
 }
 
 unsigned int Ascensor::obtenerUltimoPiso() {
 
     return this->cantidadDePisos;
+}
+
+unsigned int Ascensor::obtenerPisoActual() {
+
+    return this->piso;
 }

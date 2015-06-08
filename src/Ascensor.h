@@ -5,6 +5,7 @@ class Ascensor {
 
         unsigned int cantidadDePisos;
 
+        unsigned int piso;
 
     public:
 
@@ -18,4 +19,9 @@ class Ascensor {
         /* post: devuelve el máximo piso al que puede moverse el Ascensor.
          */
         unsigned int obtenerUltimoPiso();
+
+        /* post: devuelve el piso en el que se encuentra el Ascensor. Si está
+         *       en planta baja devuelve 0 (cero).
+         */
+        unsigned int obtenerPisoActual();
 };
