@@ -24,4 +24,11 @@ class Ascensor {
          *       en planta baja devuelve 0 (cero).
          */
         unsigned int obtenerPisoActual();
+
+        /* pre : 'piso' es un valor en el intervalo [0..obtenerUltimoPiso()]
+         * post: mueve el ascensor al piso indicado, o a Planta Baja si 'piso'
+         *       es 0.
+         *       Devuelve la cantidad de pisos que se movió.
+         */
+        unsigned int llamarDesdePiso(unsigned int piso);
 };

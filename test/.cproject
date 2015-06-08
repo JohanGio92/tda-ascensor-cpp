@@ -70,19 +70,20 @@
 						<toolChain id="cdt.managedbuild.toolchain.gnu.exe.debug.1469031643" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.exe.debug" unusedChildren="">
 							<targetPlatform id="cdt.managedbuild.target.gnu.platform.exe.debug" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.exe.debug"/>
 							<tool id="cdt.managedbuild.tool.gnu.archiver.base.2096715644" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base.1930867287"/>
-							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1516610551" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.2121574445">
+							<tool command="g++" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1516610551" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.2121574445">
 								<option id="gnu.cpp.compiler.option.include.paths.1769960339" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lib}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/tda-ascensor-cpp/src}&quot;"/>
 								</option>
+								<option id="gnu.cpp.compiler.option.dialect.std.127097047" superClass="gnu.cpp.compiler.option.dialect.std" value="gnu.cpp.compiler.dialect.default" valueType="enumerated"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1144597965" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
-							<tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1913035359" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1683265593">
+							<tool command="gcc" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1913035359" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1683265593">
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.907278766" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.linker.exe.debug.408989251" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.debug.1234953257"/>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.2035995757" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.1402533860"/>
-							<tool id="cdt.managedbuild.tool.gnu.assembler.exe.debug.1698277795" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.exe.debug.1191712264">
+							<tool command="as" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" id="cdt.managedbuild.tool.gnu.assembler.exe.debug.1698277795" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.exe.debug.1191712264">
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.25673661" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
 						</toolChain>

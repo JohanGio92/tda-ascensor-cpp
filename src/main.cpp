@@ -18,6 +18,17 @@ int main() {
     cout << "El Ascensor de servicio se mueve entre PB y el piso " <<
             ascensorDeServicio.obtenerUltimoPiso() << endl;
 
+    unsigned int pisosDesplazados;
+    pisosDesplazados = ascensorPrincipal.llamarDesdePiso(6);
+    cout << "El Asensor principal está en el piso " <<
+            ascensorPrincipal.obtenerPisoActual() <<
+            " luego de moverse " << pisosDesplazados << "pisos" << endl;
+
+    pisosDesplazados = ascensorPrincipal.llamarDesdePiso(2);
+    cout << "El Asensor principal está en el piso " <<
+            ascensorPrincipal.obtenerPisoActual() <<
+            " luego de moverse " << pisosDesplazados << "pisos" << endl;
+
 
     return 0;
 }

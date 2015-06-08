@@ -24,3 +24,26 @@ unsigned int Ascensor::obtenerPisoActual() {
 
     return this->piso;
 }
+
+unsigned int Ascensor::llamarDesdePiso(unsigned int piso) {
+
+    unsigned int desplazamiento;
+
+    if (piso > this->obtenerUltimoPiso()) {
+
+        throw string("Piso inexistente");
+    }
+
+    if (piso > this->obtenerPisoActual()) {
+
+        desplazamiento = piso - this->obtenerPisoActual();
+
+    } else {
+
+        desplazamiento = this->obtenerPisoActual() - piso;
+    }
+
+    this->piso = piso;
+
+    return desplazamiento;
+}
