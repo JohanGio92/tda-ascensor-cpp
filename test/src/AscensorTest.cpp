@@ -98,4 +98,29 @@ TEST(AscensorTest, totalizarPisosDesplazados) {
     ASSERT_EQ(37, ascensor.totalizarPisosDesplazados());
 }
 
+TEST(AscensorTest, totalizarLlamadasDesdePiso) {
+
+    Ascensor ascensor(10);
+    ascensor.llamarDesdePiso(2);
+    ascensor.llamarDesdePiso(6);
+    ascensor.llamarDesdePiso(1);
+    ascensor.llamarDesdePiso(2);
+    ascensor.llamarDesdePiso(1);
+    ascensor.llamarDesdePiso(10);
+    ascensor.llamarDesdePiso(2);
+
+    ASSERT_EQ(0, ascensor.totalizarLlamadasDesdePiso(0));
+    ASSERT_EQ(2, ascensor.totalizarLlamadasDesdePiso(1));
+    ASSERT_EQ(3, ascensor.totalizarLlamadasDesdePiso(2));
+    ASSERT_EQ(1, ascensor.totalizarLlamadasDesdePiso(6));
+    ASSERT_EQ(1, ascensor.totalizarLlamadasDesdePiso(10));
+}
+
+TEST(AscensorTest, totalizarLlamadasDesdePisoInexistenteLanzaUnaExcepcion) {
+
+    Ascensor ascensor(10);
+    ascensor.llamarDesdePiso(2);
+
+    ASSERT_ANY_THROW(ascensor.totalizarLlamadasDesdePiso(12));
+}
 

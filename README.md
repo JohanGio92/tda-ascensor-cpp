@@ -46,6 +46,10 @@ para llegar al piso indicado.
     * implementación: [`Ascensor.cpp`](../punto-04/src/Ascensor.cpp)
     * uso: [`main.cpp`](../punto-04/src/main.cpp)
 
+4. Método `unsigned int totalizarLlamadasDesdePiso(unsigned int piso)`:
+    * declaración: [`Ascensor.h`](../punto-05/src/Ascensor.h)
+    * implementación: [`Ascensor.cpp`](../punto-05/src/Ascensor.cpp)
+    * uso: [`main.cpp`](../punto-05/src/main.cpp)
 
 
 [ascensor]: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Feature_elevators.svg/200px-Feature_elevators.svg.png "Ascensor"

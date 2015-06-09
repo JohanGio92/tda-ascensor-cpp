@@ -33,6 +33,13 @@ int main() {
             ascensorPrincipal.totalizarPisosDesplazados() <<
             " pisos" << endl;
 
+    for (unsigned int piso = 0; piso <= ascensorPrincipal.obtenerUltimoPiso(); piso++) {
+
+        cout << "El Ascensor principal fue llamado " <<
+                ascensorPrincipal.totalizarLlamadasDesdePiso(piso) <<
+                " vez/ces desde el piso " << piso << endl;
+
+    }
 
     return 0;
 }
