@@ -1,6 +1,6 @@
 
-#include "Ascensor.h"
 #include <string>
+#include "Ascensor.h"
 
 using namespace std;
 
@@ -13,6 +13,7 @@ Ascensor::Ascensor(unsigned int pisos) {
 
     this->cantidadDePisos = pisos;
     this->piso = 0;
+    this->pisosDesplazados = 0;
 }
 
 unsigned int Ascensor::obtenerUltimoPiso() {
@@ -44,6 +45,12 @@ unsigned int Ascensor::llamarDesdePiso(unsigned int piso) {
     }
 
     this->piso = piso;
+    this->pisosDesplazados += desplazamiento;
 
     return desplazamiento;
+}
+
+unsigned int Ascensor::totalizarPisosDesplazados() {
+
+    return this->pisosDesplazados;
 }
