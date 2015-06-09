@@ -1,5 +1,6 @@
 
 #include "gtest/gtest.h"
+#include "Ascensor.h"
 
 /* hack/truco para poder correr las pruebas sin copiar los fuentes */
 #include "Ascensor.cpp"

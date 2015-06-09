@@ -1,4 +1,8 @@
 
+#ifndef __ASCENSOR_H__
+#define __ASCENSOR_H__
+
+
 class Ascensor {
 
     private:
@@ -32,3 +36,5 @@ class Ascensor {
          */
         unsigned int llamarDesdePiso(unsigned int piso);
 };
+
+#endif
