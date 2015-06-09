@@ -41,6 +41,10 @@ para llegar al piso indicado.
     * implementación: [`Ascensor.cpp`](../punto-03/src/Ascensor.cpp)
     * uso: [`main.cpp`](../punto-03/src/main.cpp)
 
+4. Método `unsigned int totalizarPisosDesplazados()`:
+    * declaración: [`Ascensor.h`](../punto-04/src/Ascensor.h)
+    * implementación: [`Ascensor.cpp`](../punto-04/src/Ascensor.cpp)
+    * uso: [`main.cpp`](../punto-04/src/main.cpp)
 
 
 

@@ -20,14 +20,18 @@ int main() {
 
     unsigned int pisosDesplazados;
     pisosDesplazados = ascensorPrincipal.llamarDesdePiso(6);
-    cout << "El Asensor principal está en el piso " <<
+    cout << "El Ascensor principal está en el piso " <<
             ascensorPrincipal.obtenerPisoActual() <<
-            " luego de moverse " << pisosDesplazados << "pisos" << endl;
+            " luego de moverse " << pisosDesplazados << " pisos" << endl;
 
     pisosDesplazados = ascensorPrincipal.llamarDesdePiso(2);
-    cout << "El Asensor principal está en el piso " <<
+    cout << "El Ascensor principal está en el piso " <<
             ascensorPrincipal.obtenerPisoActual() <<
-            " luego de moverse " << pisosDesplazados << "pisos" << endl;
+            " luego de moverse " << pisosDesplazados << " pisos" << endl;
+
+    cout << "El Ascensor principal se desplazó en total " <<
+            ascensorPrincipal.totalizarPisosDesplazados() <<
+            " pisos" << endl;
 
 
     return 0;

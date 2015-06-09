@@ -11,6 +11,8 @@ class Ascensor {
 
         unsigned int piso;
 
+        unsigned int pisosDesplazados;
+
     public:
 
         /* pre : 'pisos' indica la cantidad de pisos por los que se moverá
@@ -35,6 +37,11 @@ class Ascensor {
          *       Devuelve la cantidad de pisos que se movió.
          */
         unsigned int llamarDesdePiso(unsigned int piso);
+
+        /* post: Devuelve la cantidad total de pisos que el ascensor
+         *       subió y bajó.
+         */
+        unsigned int totalizarPisosDesplazados();
 };
 
 #endif

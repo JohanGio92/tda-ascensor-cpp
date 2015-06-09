@@ -79,4 +79,23 @@ TEST(AscensorTest, llamarDesdePisoInexistenteLanzaUnaExcepcion) {
     ASSERT_ANY_THROW(ascensor.llamarDesdePiso(5));
 }
 
+TEST(AscensorTest, totalizarPisosDesplazadosEsCeroLuegoDeCrearlo) {
+
+    Ascensor ascensor(6);
+
+    ASSERT_EQ(0, ascensor.totalizarPisosDesplazados());
+}
+
+TEST(AscensorTest, totalizarPisosDesplazados) {
+
+    Ascensor ascensor(19);
+    ascensor.llamarDesdePiso(10);
+    ascensor.llamarDesdePiso(1);
+    ascensor.llamarDesdePiso(0);
+    ascensor.llamarDesdePiso(15);
+    ascensor.llamarDesdePiso(17);
+
+    ASSERT_EQ(37, ascensor.totalizarPisosDesplazados());
+}
+
 
