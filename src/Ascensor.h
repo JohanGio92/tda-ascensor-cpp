@@ -13,6 +13,8 @@ class Ascensor {
 
         unsigned int pisosDesplazados;
 
+        unsigned int* llamadasDesdePiso;
+
     public:
 
         /* pre : 'pisos' indica la cantidad de pisos por los que se moverá
@@ -42,6 +44,23 @@ class Ascensor {
          *       subió y bajó.
          */
         unsigned int totalizarPisosDesplazados();
+
+        /* pre : 'piso' es un valor en el intervalo [0..obtenerUltimoPiso()].
+         * post: devuelve la cantidad de veces que el ascensor fue llamado
+         *       desde 'piso'.
+         */
+        unsigned int totalizarLlamadasDesdePiso(unsigned int piso);
+
+        /* post: libera los recursos asociados.
+         */
+        ~Ascensor();
+
+    private:
+
+        /* post: lanza una excepción si 'piso' no está en el rango
+         *       [0..obtenerUltimoPiso()].
+         */
+        void validarPiso(unsigned int piso);
 };
 
 #endif
